@@ -1,0 +1,58 @@
+#simple_arc {
+   display: block;
+   width:306px;
+   height:305px;
+}
+
+.circle {
+	width: 120px;
+	height: 120px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 120px;
+  border: 1px solid black;
+}
+
+
+#simple_arc>span[class^=w]:nth-of-type(n+0 ){
+   display:block;
+   position:absolute;
+   -moz-transform-origin:50% 100%;
+   -webkit-transform-origin:50% 100%;
+   -o-transform-origin:50% 100%;
+   -ms-transform-origin:50% 100%;
+   transform-origin:50% 10%;
+ }
+ #simple_arc span{
+	 font-family:'Viga';
+	 font-size:38px;
+	 font-weight:regular;
+	 font-style:normal;
+   line-height:0.65;
+	 white-space:pre;
+	 overflow:visible;
+	 padding:10px;
+	 }
+   #simple_arc .w0 {
+	 -moz-transform: rotate(-1.14rad);
+	 -webkit-transform: rotate(-1.14rad);
+	 -o-transform: rotate(-1.14rad);
+	 -ms-transform: rotate(-1.14rad);
+	 transform: rotate(0.62rad);
+   width: 21px;
+	 height: 24px;
+	 left: 42.7em;
+	 top: 93.95px;
+	 }
+   #simple_arc .w1 {
+  -moz-transform: rotate(-1.14rad);
+  -webkit-transform: rotate(-1.14rad);
+  -o-transform: rotate(-1.14rad);
+  -ms-transform: rotate(-1.14rad);
+  transform: rotate(-1.14rad);
+   width: 21px;
+  height: 24px;
+  left: 42.7px;
+  top: 93.95px;
+  }
