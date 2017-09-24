@@ -7,6 +7,8 @@
   <title>Webpage example</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <?php include ('post.php'); ?>
+
 
 
 </head>
@@ -100,27 +102,32 @@
           <div class="readMore">-read more</div>
         </div>
       </div>
-      <div class="form">
-        <h1>Contact Us</h1>
-        <input type="text" value="name" />
-        <input type="text" value="email" />
-        <input type="text" value="phone" />
-        <textarea type="text" id="textarea" placeholder="your message"></textarea>
-        <button>send message</button>
+      <div class="container">
+        <form id="form" method="post" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <div class="form">
+          <h1>Contact Us</h1>
+          <span class="error"><?php echo $nameErr;?></span>
+          <input placeholder="name" name="name" type="text" />
+          <input placeholder="email" name="email" type="text" />
+          <input placeholder="phone" name="phone" type="text" />
+          <textarea type="text" name="text" id="textarea" placeholder="your message"></textarea>
+          <button type="submit">send message</button>
 
+        </div>
+      </form>
       </div>
     </div>
     <div class="footer">
       <div class="footerContainer">
         <div class="firstSection">
-          <div>
+          <div >
             <span>
               <p>-home</p>
               <p>-products</p>
             </span>
           </div>
           <div>
-            <span>
+            <span  >
               <p>-about us</p>
               <p>-contact</p>
             </span>
@@ -128,7 +135,7 @@
 
         </div>
         <div class="secondSection">
-          <div><p>back to top</p></div>
+          <div id="backToTop" ><p>back to top</p></div>
           <div id="twitter">
             <img src="pics/twitter.png"/>
           </div>
@@ -136,8 +143,6 @@
             <img src="pics/fb.jpg"/>
           </div>
         </div>
-
-
         <div class="firstSection" id="copyright">
           <p>Copyrights &copy; Sample & Pack, Inc.</p>
         </div>
